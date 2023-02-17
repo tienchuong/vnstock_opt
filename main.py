@@ -14,7 +14,6 @@ from pypfopt import expected_returns
 from pypfopt import hierarchical_portfolio
 from pypfopt import black_litterman
 from pypfopt import plotting
-from pypfopt.black_litterman import BlackLittermanMode
 import streamlit as st
 from datetime import datetime
 import vnquant.data as dt
