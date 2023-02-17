@@ -8,7 +8,7 @@ Created on Fri Feb 17 18:08:04 2023
 import pandas as pd
 import numpy as np
 
-$git clone https://github.com/tienchuong/vnquantdatadownload
+git clone https://github.com/tienchuong/vnquantdatadownload
 %cd vnquantdatadownload
 from pypfopt import EfficientFrontier
 from pypfopt import risk_models
