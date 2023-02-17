@@ -8,6 +8,8 @@ Created on Fri Feb 17 18:08:04 2023
 import pandas as pd
 import numpy as np
 
+$git clone https://github.com/tienchuong/vnquantdatadownload
+%cd vnquantdatadownload
 from pypfopt import EfficientFrontier
 from pypfopt import risk_models
 from pypfopt import expected_returns
@@ -66,11 +68,11 @@ tickers = tickers_string.split(',')
 
 
 try:
-    loader = dt.DataLoader([tickers_string], start_date ,end_date, minimal=True, data_source = "cafe")   
-    data= loader.download()
-    data=data.stack()
-    data=data.reset_index()     
-    data1 = data.pivot_table(values = 'adjust', index = 'date', columns = 'Symbols').dropna()
+    #loader = dt.DataLoader([tickers_string], start_date ,end_date, minimal=True, data_source = "cafe")   
+    #data= loader.download()
+    #data=data.stack()
+    #data=data.reset_index()     
+    #data1 = data.pivot_table(values = 'adjust', index = 'date', columns = 'Symbols').dropna()
 
 except:
     st.write('Enter correct stock tickers to be included in portfolio separated\
